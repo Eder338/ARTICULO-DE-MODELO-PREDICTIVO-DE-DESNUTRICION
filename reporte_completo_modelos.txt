@@ -1,0 +1,23 @@
+================================================================================
+REPORTE COMPLETO - MODELO PREDICTIVO DESNUTRICIÓN CRÓNICA INFANTIL
+ENDES 2024
+================================================================================
+
+Registros totales procesados: 19883
+Prevalencia desnutrición: 12.47%
+
+RESULTADOS DE EVALUACIÓN EN TEST SET:
+              Model  Accuracy  Precision  Sensitivity  Specificity  F1-Score  AUC-ROC
+Logistic Regression  0.852497   0.454787     0.919355     0.842972  0.608541 0.936363
+      Random Forest  0.919209   0.623352     0.889785     0.923401  0.733112 0.974128
+            XGBoost  0.971505   0.847458     0.940860     0.975871  0.891720 0.994839
+     Neural Network  0.975863   0.873134     0.943548     0.980467  0.906977 0.996270
+
+MEJOR MODELO: Neural Network
+AUC-ROC: 0.9963
+
+RESULTADOS DE VALIDACIÓN CRUZADA (10-fold):
+                     Accuracy Mean  Accuracy Std  AUC-ROC Mean  AUC-ROC Std
+Logistic Regression       0.849971      0.008509      0.934557     0.005224
+Random Forest             0.933914      0.005817      0.976286     0.002996
+XGBoost                   0.977167      0.003026      0.995687     0.000947
